@@ -76,16 +76,16 @@ Checkpoints(
     exit_after_dump = False,
 )
 
-list_fields = ['Ey','Ex','Rho_electron']
+list_fields = ['Ex','Rho_electron']
 
 DiagFields(
-    every = 100,
+    every = 1000,
     fields = list_fields
 )
 
 DiagParticleBinning(
     deposited_quantity = "weight",
-    every = 50,
+    every = 500,
     species = ["electron"],
     axes = [
         ["moving_x", 0,config['L0x'] , 1000],
@@ -95,10 +95,10 @@ DiagParticleBinning(
 
 DiagParticleBinning(
     deposited_quantity = "weight",
-    every = 50,
+    every = 500,
     time_average = 1,
     species = ["electron"],
-    axes = [ ["ekin",    0.02,    300.,   1000] ]
+    axes = [ ["ekin",    0.02,    30.,   1000] ]
 )
 
 DiagPerformances(

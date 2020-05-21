@@ -36,7 +36,7 @@ if __name__=='__main__':
     dx_patch = dx * N_patch_x               # patch length in x
     st = 15*60*l0                              # simulation time
     lt = t0*18                              # duration gaussian pulse
-    a0 = 3.5                                # amplitude of vectorpotential
+    a0 = 2                               # amplitude of vectorpotential
 
 
 
