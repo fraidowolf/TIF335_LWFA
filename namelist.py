@@ -33,7 +33,7 @@ Main(
 
 
 MovingWindow(
-    time_start = Main.grid_length[0]*0.99,
+    time_start = Main.grid_length[0]*0.995,
     velocity_x = 0.9997
 )
 
@@ -98,7 +98,7 @@ DiagParticleBinning(
     every = 500,
     time_average = 1,
     species = ["electron"],
-    axes = [ ["ekin",    0.02,    30.,   1000] ]
+    axes = [ ["ekin",    0.02,    400.,   1000] ]
 )
 
 DiagPerformances(

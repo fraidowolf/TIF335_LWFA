@@ -14,14 +14,15 @@ if __name__=='__main__':
 
     # set iteration parameter
     start = 0.01
-    stop = 0.02
-    iterations = 5
+    stop = 0.03
+    iterations = 10
     step_len = (stop-start)/iterations
     ne = step_len*it_nbr + start
 
     # configuration parameters
     N_patch_x = 2**4 #2**6
     ppc = 100
+    
 
     # resolution:
     l0 = 2.0*np.pi                          # wavelength in normalized units
@@ -46,7 +47,7 @@ if __name__=='__main__':
     Lvlx = lp / 2.                          # space before plasma plateau in x
     Lvrx = lp                               # space behind plasma plateau in x
     L0x = Lvlx + Lpx + Lvrx + 2.*Rpx        # box length along x
-    L0x = lp*5
+    L0x = lp*8
     L0x_div = np.ceil(L0x / dx_patch) * dx_patch    # corrected length, to give a cell number 
                                                     # divisible  by the number of patches
     L0x = L0x_div
@@ -76,10 +77,6 @@ if __name__=='__main__':
 
     with open('config.json', 'w') as fp:
             json.dump(config, fp)
-
-
-
-
 
 
     '''
