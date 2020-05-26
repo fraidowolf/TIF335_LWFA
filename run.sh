@@ -1,5 +1,5 @@
 #!/bin/bash
-for i in {6..10}
+for i in {1..5}
 do
 python write_json.py $i
 mkdir "./simulation_${i}"
