@@ -14,8 +14,8 @@ if __name__=='__main__':
 
     # set iteration parameter
     start = 0.01
-    stop = 0.02
-    iterations = 5
+    stop = 0.012
+    iterations = 2
     step_len = (stop-start)/iterations
     ne = step_len*it_nbr + start
 
@@ -37,7 +37,7 @@ if __name__=='__main__':
     dx_patch = dx * N_patch_x               # patch length in x
     st = 15*60*l0                              # simulation time
     lt = t0*18                              # duration gaussian pulse
-    a0 = 3                               # amplitude of vectorpotential
+    a0 = 1                               # amplitude of vectorpotential
 
 
 

@@ -76,7 +76,7 @@ Checkpoints(
     exit_after_dump = False,
 )
 
-list_fields = ['Ex','Rho_electron']
+list_fields = ['Ex','Ey','Rho_electron']
 
 DiagFields(
     every = 1000,
